@@ -50,3 +50,20 @@ void Matrix::print_matrix(){
 	}
 	std::cout<<"matrix printed.... "<<"\n";
 }
+
+void Matrix::transponent(){
+
+	for (int j = 0; j <matrix[0].size(); j++)
+	{
+		std::vector <int> temp;
+		for (int i = 0; i <matrix.size(); i++)
+		{	
+			std::vector <int> temp1 = matrix[i];
+			temp.push_back(temp1[j]);
+			std::cout<<temp[i]<<" ";
+		}
+		trans_matrix.push_back(temp);
+		std::cout<<"\n";
+	}	
+	std::cout<<"matrix transponented... "<<"\n";
+}

@@ -15,10 +15,11 @@ public:
 	inline int numCol(){return matrix[0].size();};
 	void print_matrix();
 
-	
+	void transponent();
 	
 
 private:	
 	std::vector<std::vector<int> > matrix;
+	std::vector<std::vector<int> > trans_matrix;
 };
 

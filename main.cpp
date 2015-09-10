@@ -5,9 +5,9 @@ using namespace std;
 
 
 int main(){
-	Matrix m1 = Matrix(3,4);
-	
-	
+	Matrix m1 = Matrix(2,3);
+	//m1.print_matrix();
+	m1.transponent();
 
 
 
