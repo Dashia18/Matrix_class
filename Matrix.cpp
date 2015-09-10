@@ -17,6 +17,7 @@ Matrix::Matrix(int vec_size){
 
 Matrix::Matrix(int vec_size1, int vec_size2){
 	int k = 0;
+    
 	for (int i = 0; i <vec_size1; i++)
 	{		
 		std::vector <int> temp;
@@ -31,17 +32,21 @@ Matrix::Matrix(int vec_size1, int vec_size2){
 		matrix.push_back(temp);
 		std::cout<<"\n";
 	}
-}
-
-void Matrix::print_matrix(){
-	for (int i = 0; i <matrix.size(); i++)
-	{
-		//for (int j = 0; j <matrix[i].size(); j++)
-		//{
-			//std::cout<<matrix[i][j];
-
-		//}
-		
+	std::cout<<"matrix created... "<<"\n";
 	}
 
+
+
+void Matrix::print_matrix(){
+	
+	for (int i = 0; i <matrix.size(); i++)
+	{		
+		std::vector <int> temp = matrix[i];
+		for (int j = 0; j <matrix[0].size(); j++)
+		{
+			std::cout<<temp[j]<<" ";
+		}
+		std::cout<<"\n";
+	}
+	std::cout<<"matrix printed.... "<<"\n";
 }
