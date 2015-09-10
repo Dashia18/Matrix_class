@@ -1,13 +1,47 @@
 #include "Matrix.h"
 
+
+
 Matrix::Matrix(){
-	
+	int vec_size1 = 1;
+	int vec_size2 = 1;
+	Matrix(vec_size1, vec_size2);
 }
 
 Matrix::Matrix(int vec_size){
-	for (int i = 0; i <vec_size; i++)
+	int vec_size1 = 1;
+	int vec_size2 = vec_size;
+	Matrix(vec_size1, vec_size2);
+
+};
+
+Matrix::Matrix(int vec_size1, int vec_size2){
+	int k = 0;
+	for (int i = 0; i <vec_size1; i++)
+	{		
+		std::vector <int> temp;
+		for (int j = 0; j <vec_size2; j++)
+		{
+			
+				temp.push_back(k);
+				k++;
+			
+			std::cout<<temp[j]<<" ";
+		}
+		matrix.push_back(temp);
+		std::cout<<"\n";
+	}
+}
+
+void Matrix::print_matrix(){
+	for (int i = 0; i <matrix.size(); i++)
 	{
-		vec.push_back(0);
+		//for (int j = 0; j <matrix[i].size(); j++)
+		//{
+			//std::cout<<matrix[i][j];
+
+		//}
+		
 	}
 
 }

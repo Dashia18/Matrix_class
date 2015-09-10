@@ -1,5 +1,6 @@
 #include <vector>
-using namespace std;
+#include <iostream>
+
 
 class Matrix{
 
@@ -8,9 +9,15 @@ public:
 	Matrix();
 	//constructor
 	Matrix(int vec_size);
+	Matrix(int vec_size1,int vec_size2);
 
+	void print_matrix();
+	inline int mSize(){return matrix.size();};
+	
 
 private:	
-	vector<int> vec;
+	
+	
+	std::vector<std::vector<int> > matrix;
 };
 

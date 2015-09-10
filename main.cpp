@@ -5,8 +5,8 @@ using namespace std;
 
 
 int main(){
-	Matrix m1 = Matrix(2);
-	
+	Matrix m1 = Matrix();
+	//m1.print_matrix();
 	
 
 
