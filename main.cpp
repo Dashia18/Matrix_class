@@ -11,7 +11,7 @@ int main(){
 	//m1.print_matrix();
 	m1.transponent();
 	m1*m2;//can't return a matrix...
-
+	m1+m2;
 
 
 	return 0;
