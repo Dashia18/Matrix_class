@@ -18,6 +18,7 @@ public:
 	std::vector<std::vector<int> > transponent();
 	std::vector<std::vector<int> > operator* (Matrix m2);
 	std::vector<std::vector<int> > operator+ (Matrix m2);
+	std::vector<std::vector<int> > operator- (Matrix m2);
 	
 
 private:	

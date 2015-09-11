@@ -12,7 +12,7 @@ int main(){
 	m1.transponent();
 	m1*m2;//can't return a matrix...
 	m1+m2;
-
+	m1-m2;
 
 	return 0;
 }

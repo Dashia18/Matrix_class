@@ -109,7 +109,7 @@ std::vector<std::vector<int> > Matrix::operator+ (Matrix m2){
 
 		for (int j = 0; j <matrix[0].size(); j++)
 		{
-			temp =  mx1[j]+mx2[j];
+			temp =  mx1[j] + mx2[j];
 			temp_vec.push_back(temp);
 			std::cout<<temp_vec[j]<<" ";
 		}
@@ -120,5 +120,30 @@ std::vector<std::vector<int> > Matrix::operator+ (Matrix m2){
 	}
 
 	return add_res;
+
+}
+std::vector<std::vector<int> > Matrix::operator- (Matrix m2){
+	std::vector<std::vector<int> > matrix2 = m2.matrix;
+
+	for (int i = 0; i <matrix.size(); i++)
+	{
+		int temp=0;
+		std::vector <int> mx1 = matrix[i];
+		std::vector <int> mx2 = matrix2[i];
+		std::vector <int> temp_vec;
+
+		for (int j = 0; j <matrix[0].size(); j++)
+		{
+			temp =  mx1[j] - mx2[j];
+			temp_vec.push_back(temp);
+			std::cout<<temp_vec[j]<<" ";
+		}
+
+
+		sub_res.push_back(temp_vec);
+		std::cout<<"\n";
+	}
+
+	return sub_res;
 
 }
