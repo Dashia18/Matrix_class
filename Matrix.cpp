@@ -147,3 +147,7 @@ std::vector<std::vector<int> > Matrix::operator- (Matrix m2){
 	return sub_res;
 
 }
+
+void Matrix::initMatrix(int fix_const){
+	
+}

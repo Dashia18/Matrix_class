@@ -16,10 +16,11 @@ public:
 	void print_matrix();
 
 	std::vector<std::vector<int> > transponent();
-	std::vector<std::vector<int> > operator* (Matrix m2);
+	std::vector<std::vector<int> > operator* (Matrix m2);//need return Matrix!!
 	std::vector<std::vector<int> > operator+ (Matrix m2);
 	std::vector<std::vector<int> > operator- (Matrix m2);
 	
+	void initMatrix(int fix_const);
 
 private:	
 	std::vector<std::vector<int> > matrix;
