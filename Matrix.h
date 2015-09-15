@@ -11,6 +11,7 @@ public:
 	Matrix(const int vec_size);
 	Matrix(const int vec_size1, const int vec_size2);	
 	Matrix(const int vec_size1, const int vec_size2, int konst);
+	void diagonal(int diagonal_element);
 
 	inline int numRow(){return matrix.size();};
 	inline int numCol(){return matrix[0].size();};
