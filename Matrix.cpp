@@ -76,7 +76,22 @@ std::vector<std::vector<int> > Matrix::transponent(){
 	std::cout<<"matrix are transponented... "<<"\n";
 	return trans_matrix;
 }
-
+void Matrix::determinant(){
+	int det = 0;
+	//det = matrix[0][0]*matrix[1][1] - matrix[0][1]*matrix[1][0];
+	int k = 0;
+// 	for (int i = 0; i <matrix.size(); i++)
+// 	{
+		//calculate determinator matrix 2*2
+		for (int j = 0; j <matrix.size(); j++)
+		{
+			det = det + std::pow(-1.0,j) * matrix[k][j]*matrix[k+1][j+std::pow(-1.0,j)];
+		}
+		
+// 	}
+// 	
+	std::cout<<"determinant calculated..."<<det;
+}
 std::vector<std::vector<int> > Matrix::operator* (Matrix m2){
 	std::vector<std::vector<int> > matrix2T = m2.transponent();
 	int k = 0;
@@ -103,7 +118,6 @@ std::vector<std::vector<int> > Matrix::operator* (Matrix m2){
 	std::cout<<"matrix are multed... "<<"\n";
 	return mutl_res;
 }
-
 std::vector<std::vector<int> > Matrix::operator+ (Matrix m2){
 	std::vector<std::vector<int> > matrix2 = m2.matrix;
 	
@@ -155,6 +169,3 @@ std::vector<std::vector<int> > Matrix::operator- (Matrix m2){
 
 }
 
-void Matrix::initMatrix(int fix_const){
-	
-}

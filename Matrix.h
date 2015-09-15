@@ -1,5 +1,6 @@
 #include <vector>
 #include <iostream>
+#include <cmath>
 
 
 class Matrix{
@@ -16,13 +17,13 @@ public:
 	inline int numRow(){return matrix.size();};
 	inline int numCol(){return matrix[0].size();};
 	void print_matrix();
+	void determinant();
 
 	std::vector<std::vector<int> > transponent();
 	std::vector<std::vector<int> > operator* (Matrix m2);//need return Matrix type!!
 	std::vector<std::vector<int> > operator+ (Matrix m2);
 	std::vector<std::vector<int> > operator- (Matrix m2);
 	
-	void initMatrix(int fix_const);
 
 private:	
 	std::vector<std::vector<int> > matrix;

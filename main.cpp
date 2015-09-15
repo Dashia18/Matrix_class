@@ -5,7 +5,7 @@ using namespace std;
 
 
 int main(){
-	Matrix m1 = Matrix(3, 3, 0);
+	Matrix m1 = Matrix(2, 2,  2);
 	//Matrix m2 = Matrix(3, 3, 5);
 	//Matrix m3 = Matrix(3, 3, 1);
 	//m1.print_matrix();
@@ -15,6 +15,8 @@ int main(){
 	//m1-m2;
 	m1.diagonal(1);
 	m1.print_matrix();
+	m1.determinant();
+
 	return 0;
 }
 
