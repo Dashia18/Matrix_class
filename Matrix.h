@@ -9,14 +9,15 @@ public:
 	Matrix();
 	//constructor
 	Matrix(const int vec_size);
-	Matrix(const int vec_size1, const int vec_size2);
-		
+	Matrix(const int vec_size1, const int vec_size2);	
+	Matrix(const int vec_size1, const int vec_size2, int konst);
+
 	inline int numRow(){return matrix.size();};
 	inline int numCol(){return matrix[0].size();};
 	void print_matrix();
 
 	std::vector<std::vector<int> > transponent();
-	std::vector<std::vector<int> > operator* (Matrix m2);//need return Matrix!!
+	std::vector<std::vector<int> > operator* (Matrix m2);//need return Matrix type!!
 	std::vector<std::vector<int> > operator+ (Matrix m2);
 	std::vector<std::vector<int> > operator- (Matrix m2);
 	

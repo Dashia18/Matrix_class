@@ -5,36 +5,57 @@
 Matrix::Matrix(){
 	int vec_size1 = 1;
 	int vec_size2 = 1;
-	Matrix(vec_size1, vec_size2);
+	int konst = 0;
+	Matrix(vec_size1, vec_size2, konst);
 }
 
 Matrix::Matrix(const int vec_size){
 	int vec_size1 = 1;
 	int vec_size2 = vec_size;
-	Matrix(vec_size1, vec_size2);
+	int konst = 0;
+	Matrix(vec_size1, vec_size2, konst);
 
 };
 
 Matrix::Matrix(const int vec_size1, const int vec_size2){
-	int k = 0;
-    
+	int konst = 0;
+	Matrix(vec_size1, vec_size2, konst);
+	/*int k = 0;
+
+	for (int i = 0; i <vec_size1; i++)
+	{		
+	std::vector <int> temp;
+	for (int j = 0; j <vec_size2; j++)
+	{
+
+	temp.push_back(k);
+	k++;
+
+	std::cout<<temp[j]<<" ";
+	}
+	matrix.push_back(temp);
+	std::cout<<"\n";
+	}
+	std::cout<<"matrix created... "<<"\n";*/
+	}
+Matrix::Matrix(const int vec_size1, const int vec_size2, int konst){
+	
 	for (int i = 0; i <vec_size1; i++)
 	{		
 		std::vector <int> temp;
 		for (int j = 0; j <vec_size2; j++)
 		{
+
+			temp.push_back(konst);
 			
-				temp.push_back(k);
-				k++;
-			
+
 			std::cout<<temp[j]<<" ";
 		}
 		matrix.push_back(temp);
 		std::cout<<"\n";
 	}
 	std::cout<<"matrix created... "<<"\n";
-	}
-
+}
 
 
 void Matrix::print_matrix(){
